@@ -1,0 +1,14 @@
+{
+  "name": "taller-playwright-pokemon-showdown",
+  "version": "1.0.0",
+  "description": "Automatización de pruebas para Pokémon Showdown utilizando Playwright, para completar el taller de las sesiones 3-4 del curso de Testing en EAFIT.",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5"
+  }
+}
