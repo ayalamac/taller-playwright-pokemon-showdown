@@ -1,128 +1,99 @@
 {
-    "format": {
-        "generation": "Gen 8",
-        "name": "OU"
+  "name": "Elemental Surge",
+  "format": {
+    "generation": "Gen 8",
+    "name": "OU"
+  },
+  "pokemons": [
+    {
+      "name": "Landorus-Therian",
+      "item": "Leftovers",
+      "ability": "Intimidate",
+      "moves": ["Earthquake", "Knock Off", "Stealth Rock", "U-turn"],
+      "evs": {
+        "healthPoints": 248,
+        "attack": 0,
+        "defense": 172,
+        "specialAttack": 0,
+        "specialDefense": 0,
+        "speed": 88
+      },
+      "nature": "Impish"
     },
-    "pokemons": [
-        {
-            "name": "Landorus-Therian",
-            "item": "Leftovers",
-            "ability": "Intimidate",
-            "moves": [
-                "Earthquake",
-                "Knock Off",
-                "Stealth Rock",
-                "U-turn"
-            ],
-            "evs": {
-                "healthPoints": 248,
-                "attack": 0,
-                "defense": 172,
-                "specialAttack": 0,
-                "specialDefense": 0,
-                "speed": 88
-            },
-            "nature": "Impish"
-        },
-        {
-            "name": "Tornadus-Therian",
-            "item": "Heavy-Duty Boots",
-            "ability": "Regenerator",
-            "moves": [
-                "Defog",
-                "Focus Blast",
-                "Heat Wave",
-                "Hurricane"
-            ],
-            "evs": {
-                "healthPoints": 0,
-                "attack": 0,
-                "defense": 0,
-                "specialAttack": 252,
-                "specialDefense": 4,
-                "speed": 252
-            },
-            "nature": "Timid"
-        },
-        {
-            "name": "Heatran",
-            "item": "Leftovers",
-            "ability": "Flash Fire",
-            "moves": [
-                "Earth Power",
-                "Magma Storm",
-                "Taunt",
-                "Toxic"
-            ],
-            "evs": {
-                "healthPoints": 252,
-                "attack": 0,
-                "defense": 0,
-                "specialAttack": 4,
-                "specialDefense": 252,
-                "speed": 0
-            },
-            "nature": "Calm"
-        },
-        {
-            "name": "Rillaboom",
-            "item": "Choice Band",
-            "ability": "Grassy Surge",
-            "moves": [
-                "Grassy Glide",
-                "Knock Off",
-                "U-turn",
-                "Wood Hammer"
-            ],
-            "evs": {
-                "healthPoints": 0,
-                "attack": 252,
-                "defense": 4,
-                "specialAttack": 0,
-                "specialDefense": 0,
-                "speed": 252
-            },
-            "nature": "Adamant"
-        },
-        {
-            "name": "Weavile",
-            "item": "Heavy-Duty Boots",
-            "ability": "Pressure",
-            "moves": [
-                "Ice Shard",
-                "Knock Off",
-                "Swords Dance",
-                "Triple Axel"
-            ],
-            "evs": {
-                "healthPoints": 0,
-                "attack": 252,
-                "defense": 4,
-                "specialAttack": 0,
-                "specialDefense": 0,
-                "speed": 252
-            },
-            "nature": "Jolly"
-        },
-        {
-            "name": "Tapu Fini",
-            "item": "Leftovers",
-            "ability": "Misty Surge",
-            "moves": [
-                "Defog",
-                "Moonblast",
-                "Nature’s Madness",
-                "Scald"
-            ],
-            "evs": {
-                "healthPoints": 252,
-                "attack": 0,
-                "defense": 4,
-                "specialAttack": 0,
-                "specialDefense": 252,
-                "speed": 0
-            },
-            "nature": "Calm"
-        }
-    ]
+    {
+      "name": "Tornadus-Therian",
+      "item": "Heavy-Duty Boots",
+      "ability": "Regenerator",
+      "moves": ["Defog", "Focus Blast", "Heat Wave", "Hurricane"],
+      "evs": {
+        "healthPoints": 0,
+        "attack": 0,
+        "defense": 0,
+        "specialAttack": 252,
+        "specialDefense": 4,
+        "speed": 252
+      },
+      "nature": "Timid"
+    },
+    {
+      "name": "Heatran",
+      "item": "Leftovers",
+      "ability": "Flash Fire",
+      "moves": ["Earth Power", "Magma Storm", "Taunt", "Toxic"],
+      "evs": {
+        "healthPoints": 252,
+        "attack": 0,
+        "defense": 0,
+        "specialAttack": 4,
+        "specialDefense": 252,
+        "speed": 0
+      },
+      "nature": "Calm"
+    },
+    {
+      "name": "Rillaboom",
+      "item": "Choice Band",
+      "ability": "Grassy Surge",
+      "moves": ["Grassy Glide", "Knock Off", "U-turn", "Wood Hammer"],
+      "evs": {
+        "healthPoints": 0,
+        "attack": 252,
+        "defense": 4,
+        "specialAttack": 0,
+        "specialDefense": 0,
+        "speed": 252
+      },
+      "nature": "Adamant"
+    },
+    {
+      "name": "Weavile",
+      "item": "Heavy-Duty Boots",
+      "ability": "Pressure",
+      "moves": ["Ice Shard", "Knock Off", "Swords Dance", "Triple Axel"],
+      "evs": {
+        "healthPoints": 0,
+        "attack": 252,
+        "defense": 4,
+        "specialAttack": 0,
+        "specialDefense": 0,
+        "speed": 252
+      },
+      "nature": "Jolly"
+    },
+    {
+      "name": "Tapu Fini",
+      "item": "Leftovers",
+      "ability": "Misty Surge",
+      "moves": ["Defog", "Moonblast", "Nature’s Madness", "Scald"],
+      "evs": {
+        "healthPoints": 252,
+        "attack": 0,
+        "defense": 4,
+        "specialAttack": 0,
+        "specialDefense": 252,
+        "speed": 0
+      },
+      "nature": "Calm"
+    }
+  ]
 }
