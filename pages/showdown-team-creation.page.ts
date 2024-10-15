@@ -27,6 +27,8 @@ export class ShowdownTeamCreationPage {
     }
 
     nameTeam = async (teamName: string) => {
+        await this.teamNameInputText.click();
+        await this.teamNameInputText.clear();
         await this.teamNameInputText.fill(teamName);
     }
 
