@@ -1,6 +1,7 @@
+.vscode/
+blob-report/
+evidences/
 node_modules/
-/test-results/
-/playwright-report/
-/blob-report/
-/playwright/.cache/
-.vscode
+playwright-report/
+playwright/.cache/
+test-results/
