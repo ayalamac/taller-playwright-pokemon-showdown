@@ -9,7 +9,7 @@ export class ShowdownPokemonConfigurationPage {
     readonly remainingEvsText: Locator;
     readonly backToTeamButton: Locator;
     
-    private readonly BACK_TO_TEAM_BUTTON_SELECTOR        = '//button[@name = "back" and contains(., "Team")]';
+    private readonly BACK_TO_TEAM_BUTTON_SELECTOR        = 'button[name="back"]';
     private readonly POKEMON_NAME_INPUT_TEXT_SELECTOR    = 'input[name="pokemon"]';
     private readonly POKEMON_ITEM_INPUT_TEXT_SELECTOR    = 'input[name="item"]';
     private readonly POKEMON_ABILITY_INPUT_TEXT_SELECTOR = 'input[name="ability"]';
