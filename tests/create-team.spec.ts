@@ -9,12 +9,13 @@ import pokemonTeamData from './../data/pokemon-team.json';
 import { Pokemon } from '../types/pokemon.type';
 
 test('Crear un equipo de Pokemones y verificar que es válido', async ({page}) => {
-
-  test.slow();
-
+  
   const REMAINING_EV_TEXT = "0";
   const {generation, name} = pokemonTeamData.format;
   const VALID_TEAM_TEXT = `Your team is valid for [${generation}] ${name}.`;
+  let pokemonCounter = 1;
+
+  test.slow();
   
   const homePage: ShowdownHomePage = new ShowdownHomePage(page);
   const teamListPage: ShowdownTeamListPage = new ShowdownTeamListPage(page);
@@ -29,7 +30,7 @@ test('Crear un equipo de Pokemones y verificar que es válido', async ({page}) =
 
   await teamCreationPage.nameTeam(pokemonTeamData.name);
   await teamCreationPage.selectFormat(pokemonTeamData.format);
-  await page.screenshot({ path: `evidences/evidence-team-creation.png` });
+  await page.screenshot({ path: `evidences/evidence-create-team.png` });
 
   for(const pokemon of pokemonList) {
     await teamCreationPage.clickOnAddPokemon();
@@ -41,15 +42,14 @@ test('Crear un equipo de Pokemones y verificar que es válido', async ({page}) =
     await pokemonConfigurationPage.setEvs(pokemon.evs);
 
     const remainingEvs = await pokemonConfigurationPage.getRemainingEvs();
-    await page.screenshot({ path: `evidences/evidence-pokemon-${pokemon.name}.png` });
-
+    
     expect(remainingEvs).toBe(REMAINING_EV_TEXT);
+    await page.screenshot({ path: `evidences/evidence-create-pokemon-${pokemonCounter++}-${pokemon.name.replaceAll(' ', '+')}.png` });
 
     await pokemonConfigurationPage.clickOnBackToTeam();
   }
- 
-  const validationResult = await teamCreationPage.getTeamValidationResult(pokemonTeamData.format);
-  await page.screenshot({ path: `evidences/evidence-valid-team.png` });
 
+  const validationResult = await teamCreationPage.getTeamValidationResult(pokemonTeamData.format);
   expect(validationResult).toBe(VALID_TEAM_TEXT);
+  await page.screenshot({ path: `evidences/evidence-result-valid-team.png` });
 });

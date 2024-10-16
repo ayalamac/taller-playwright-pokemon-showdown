@@ -15,7 +15,7 @@ export class ShowdownPokemonConfigurationPage {
     private readonly POKEMON_ABILITY_INPUT_TEXT_SELECTOR = 'input[name="ability"]';
     private readonly REMAINING_EVS_TEXT_SELECTOR         = '//div[@class = "totalev"]/em';
 
-    private readonly KEYPRESS_DELAY = 80;
+    private readonly KEYPRESS_DELAY = 25;
 
     constructor(page: Page) {
         this.page                    = page;
@@ -27,6 +27,7 @@ export class ShowdownPokemonConfigurationPage {
     }
 
     selectName = async (name: string): Promise<void> => {
+        await this.pokemonNameInputText.clear();
         await this.pokemonNameInputText.click();
         await this.pokemonNameInputText.pressSequentially(name, { delay: this.KEYPRESS_DELAY });
         const foundPokemonLink: Locator = this.page.locator(`a[data-entry="pokemon|${name}"]`);
@@ -34,6 +35,7 @@ export class ShowdownPokemonConfigurationPage {
     }
 
     assignItem = async (item: string): Promise<void> => {
+        await this.pokemonItemInputText.clear();
         await this.pokemonItemInputText.click();
         await this.pokemonItemInputText.pressSequentially(item, { delay: this.KEYPRESS_DELAY });
         const foundPokemonItem: Locator = this.page.locator(`a[data-entry="item|${item}"]`);
@@ -70,7 +72,7 @@ export class ShowdownPokemonConfigurationPage {
 
     getRemainingEvs = async (): Promise<string> => this.remainingEvsText.innerText();
 
-    clickOnBackToTeam = async () => {
+    clickOnBackToTeam = async (): Promise<void> => {
         await this.backToTeamButton.click();
     }
 }

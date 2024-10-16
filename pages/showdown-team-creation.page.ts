@@ -15,7 +15,7 @@ export class ShowdownTeamCreationPage {
     private readonly ADD_POKEMON_BUTTON_NAME       = 'Add Pokémon';
     private readonly VALIDATE_BUTTON_SELECTOR      = '//button[@name="validate"]';
     
-    private readonly KEYPRESS_DELAY = 80;
+    private readonly KEYPRESS_DELAY = 25;
 
     constructor(page: Page) {
         this.page                 = page;
@@ -27,8 +27,8 @@ export class ShowdownTeamCreationPage {
     }
 
     nameTeam = async (teamName: string) => {
-        await this.teamNameInputText.click();
         await this.teamNameInputText.clear();
+        await this.teamNameInputText.click();
         await this.teamNameInputText.fill(teamName);
     }
 
