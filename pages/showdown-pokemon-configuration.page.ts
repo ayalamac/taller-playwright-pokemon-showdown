@@ -26,7 +26,7 @@ export class ShowdownPokemonConfigurationPage {
         this.remainingEvsText        = page.locator(this.REMAINING_EVS_TEXT_SELECTOR);
     }
 
-    selectName = async (name: string): Promise<void> => {
+    selectPokemon = async (name: string): Promise<void> => {
         await this.pokemonNameInputText.clear();
         await this.pokemonNameInputText.click();
         await this.pokemonNameInputText.pressSequentially(name, { delay: this.KEYPRESS_DELAY });

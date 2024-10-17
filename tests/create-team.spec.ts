@@ -35,7 +35,7 @@ test('Crear un equipo de Pokemones y verificar que es válido', async ({page}) =
   for(const pokemon of pokemonList) {
     await teamCreationPage.clickOnAddPokemon();
 
-    await pokemonConfigurationPage.selectName(pokemon.name);
+    await pokemonConfigurationPage.selectPokemon(pokemon.name);
     await pokemonConfigurationPage.assignItem(pokemon.item);
     await pokemonConfigurationPage.defineAbility(pokemon.ability);
     await pokemonConfigurationPage.assignMoves(pokemon.moves);
