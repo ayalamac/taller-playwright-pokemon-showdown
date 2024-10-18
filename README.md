@@ -1,5 +1,7 @@
 # taller-playwright-pokemon-showdown
 
+[![Playwright Tests](https://github.com/ayalamac/taller-playwright-pokemon-showdown/actions/workflows/playwright.yml/badge.svg)](https://github.com/ayalamac/taller-playwright-pokemon-showdown/actions/workflows/playwright.yml) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown)
+
 Este repositorio resuelve el taller de automatización de pruebas para Pokémon Showdown utilizando Playwright, para completar la actividad asignada para las sesiones 3-4 del curso de Testing en EAFIT.
 
 ## Reto planteado
@@ -247,18 +249,28 @@ Para ejecutar el caso de prueba, realiza los siguientes pasos:
 
 ### CI con Github Actions
 
-Agregamos un pipeline que se ejecuta con cada push que realizamos sobre la rama `main`. Pueden ver el historial en el enlace de acciones.
+Agregamos un pipeline que se ejecuta con cada push que realizamos sobre la rama `main`. Pueden ver el historial en el enlace de [acciones](https://github.com/ayalamac/taller-playwright-pokemon-showdown/actions).
+
+[![Playwright Tests](https://github.com/ayalamac/taller-playwright-pokemon-showdown/actions/workflows/playwright.yml/badge.svg)](https://github.com/ayalamac/taller-playwright-pokemon-showdown/actions/workflows/playwright.yml)
 
 #### Generación de artefactos de reporte y de evidencia
 
-Cada ejecución válida del pipeline genera al final del build, los artefactos con el reporte y las evidencias en imagen.
+La ejecución correcta del pipeline de automatización de CI genera al final del build los siguientes artefactos:
+
+- Reporte de resultados de la prueba
+- Evidencias en imagen de ejecución y prueba exitosa
+
+Pueden ver el historial de ejecuciones, las ejecuciones exitosas y los artefactos generados.
+
+![Artefactos generados en Github Actions](docs/github-actions-artefactos-generados.png)
 
 ### SAST con Sonarcloud
 
-Agregamos la ejecución de pruebas estáticas de calidad en Sonar y el proyecto se puede ver en:
+Agregamos la ejecución de pruebas estáticas de calidad en Sonarcloud y el proyecto se puede ver en el siguiente enlace:
 
-...
+[https://sonarcloud.io/summary/overall?id=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown](https://sonarcloud.io/summary/overall?id=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown)
 
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=eafit-topicos-avanzados-testing_taller-playwright-pokemon-showdown)
 
 ## Requisitos
 
@@ -266,7 +278,7 @@ Agregamos la ejecución de pruebas estáticas de calidad en Sonar y el proyecto 
 
 ## Autores
 
-Todo el trabajo fue realizado con prácticas de *pair programming*, aprovechando el plugin Live Share de VSCode y los *commits* del proyecto han sido realizados usando la coautores de Github.
+Todo el trabajo fue realizado con prácticas de *pair programming*, aprovechando el plugin [Live Share de VSCode](https://visualstudio.microsoft.com/services/live-share/) y los *commits* del proyecto han sido realizados usando la coautores de Github.
 
 - Andrés Ayala <amayalac@eafit.edu.co>
 - Santiago Patiño <spatinob1@eafit.edu.co>
